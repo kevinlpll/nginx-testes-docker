@@ -1,0 +1,14 @@
+services:
+  nginx:
+    ports:
+    - "8080:80"
+    build: .
+    develop:
+      watch:
+        - path: nginx.conf
+          target: /etc/nginx/nginx.conf
+          action: sync+restart        
+        - path: ./conf.d
+          action: sync+restart
+          target: /etc/nginx/conf.d
+        

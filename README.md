@@ -7,3 +7,10 @@ Para rodar o projeto:
 
 Ambiente simples usando o docker para rodar o nginx
 Os arquivos nginx.conf e o diretório conf.d é sincronizado ao realizar alterações
+
+
+
+*Pode ser que o projeto não rode de primeira, para isso será necessário atualizar o docker.*
+Utilizei as versões:
+- Docker Compose version v2.23.0-desktop.1
+- Docker version 24.0.6, build ed223bc
